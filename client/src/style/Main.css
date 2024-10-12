@@ -1,0 +1,83 @@
+.main{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: relative;
+}
+.main-left{
+    padding-left: 150px;
+    width: 50%;
+}
+.text-title{
+    color: rgb(221, 142, 85);
+    margin-top: 80px;
+    font-size: 60px;
+}
+.text-name{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.find-match{
+    margin-top: 80px;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, #ffa400, #00aefd);
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+}
+.find-match .glow-text {
+    font-weight: bold;
+    text-shadow: 0 0 3px #fff, 0 0 10px #fff, 0 0 15px #FFA500, 0 0 20px #FFA500; /* Màu sắc và đổ bóng cho chữ */
+}
+.main-right{
+    padding-right: 150px;
+    width: 35%;
+}
+.online-player{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.online-player::before{
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: green;
+}
+.statistical{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+}
+.statistical-item{
+    width: 160px;
+    height: 100px;
+    background: pink;
+    border-radius: 10px;
+    padding: 15px 10px;
+    font-weight: bold;
+}
+.statistical-item-title{
+    font-size: 16px;
+}
+.statistical-item-count{
+    font-size: 30px;
+    margin-top: 15px;
+}
+@media screen and (max-width: 767px){
+    .main{
+        flex-direction: column;
+    }
+    .main-right{
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}

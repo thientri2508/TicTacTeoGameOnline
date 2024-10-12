@@ -1,0 +1,28 @@
+.wrapper{
+    height: 80vh;
+    display: grid;
+    place-items: center;
+}
+.login-form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.input-field{
+    width: 500px;
+    padding: 10px 20px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.btn-join{
+    width: 150px;
+    height: 50px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #f09d03, #f7ca76);
+}

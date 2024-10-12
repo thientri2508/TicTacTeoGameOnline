@@ -1,0 +1,133 @@
+.bg{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background:rgba(0,0,0,0.5); 
+    z-index: 10;
+}
+.bg-count{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    backdrop-filter: blur(8px);
+    z-index: 10;
+}
+.notification{
+    width: 45%;
+    height: 200px;
+    margin: 0 auto;
+    margin-top: 100px;
+    background:rgba(183, 166, 232, 0.5); 
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    backdrop-filter: blur(10px);
+}
+.ms{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.message{
+    font-weight: bold;
+    font-size: 24px;
+}
+.outline{
+    width: 48px;
+    height: 48px;
+    background:rgba(158, 150, 153, 0.5); 
+    border-radius: 50%;
+}
+.option{
+    display: flex;
+    margin-top: 60px;
+    float: right;
+    gap: 15px;
+}
+.exit{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background:rgba(183, 166, 232, 0.5); 
+    position: relative;
+    cursor: pointer;
+}
+.exit:hover{
+    background:rgba(183, 166, 232, 0.8); 
+}
+.again{
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background: linear-gradient(to right, #ffa400, #00aefd);
+    position: relative;
+    cursor: pointer;
+}
+.again-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all 0.25s linear;
+}
+.again:hover .again-icon{
+    transform: translateX(-50%) translateY(-50%) rotate(180deg);
+}
+.exit-shape {
+    position: relative;
+    width: 27px;
+    height: 27px;
+}
+
+.exit-shape::before, .exit-shape::after {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 92%;
+    width: 2px;
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+    transform: translateX(-50%) rotate(45deg);
+}
+.exit-shape::after {
+    transform: translateX(-50%) rotate(-45deg);
+}
+.count-down{
+    width: 60px;
+    margin: 0 auto;
+    margin-top: 250px;
+    font-weight: bold;
+    font-size: 85px;
+    font-family: monospace;
+}
+.draw-icon{
+    width: 33px;
+    height: 33px;
+    margin-top: 10px;
+    margin-left: 7px;
+}
+.scale-effect {
+    animation: scaleEffect 0.5s ease-in-out;
+}
+@keyframes scaleEffect {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.5);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .bg{
+        height: 100%;
+    }
+}
