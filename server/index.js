@@ -5,7 +5,7 @@ const io = require('socket.io')(server, { cors: { origin: "*", methods: [ "GET",
 
 app.use(express.json())
 
-const PORT = process.env.PORT || 5000
+const PORT = 5000
 
 server.listen(PORT, () => console.log(`Server started on port ${PORT}`))
 
