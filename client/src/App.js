@@ -3,7 +3,7 @@ import io from 'socket.io-client'
 import Login from './views/Login';
 import Main from './views/Main';
 
-const socket = io('http://localhost:5000');
+const socket = io('https://tictactoegameonline.onrender.com');
 const App = () => {
 
     const [isLongin, setIslongin] = useState(false)
