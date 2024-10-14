@@ -6,7 +6,7 @@ const Loading = () => {
     <div className='bg-loading'>
         <div className='loading'>
             <div>waiting for opponent...</div>
-            <div class="spinner">
+            <div className="spinner">
                 <span></span>
                 <span></span>
                 <span></span>
